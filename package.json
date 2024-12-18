@@ -1,0 +1,37 @@
+{
+  "name": "arm-server-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "./node_modules/.bin/standard --verbose",
+    "fix": "./node_modules/.bin/standard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "standard": {
+    "sourceType": "module",
+    "ignore": [
+      "/data",
+      "/temp"
+    ],
+    "globals": [
+      "log",
+      "MouseEvent",
+      "WebSocket",
+      "FileReader",
+      "CustomEvent",
+      "onmessage",
+      "requestAnimationFrame",
+      "self"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cron": "^3.3.1"
+  }
+}
