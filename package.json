@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "lint": "./node_modules/.bin/standard --verbose",
-    "fix": "./node_modules/.bin/standard --fix"
+    "fix": "./node_modules/.bin/standard --fix",
+    "t": "node src/test-proxy.js"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +34,8 @@
   "dependencies": {
     "axios": "^1.7.9",
     "cron": "^3.3.1",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socks-proxy-agent": "^8.0.5"
   }
 }

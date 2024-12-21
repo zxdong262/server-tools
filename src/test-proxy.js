@@ -1,6 +1,6 @@
 // scheduler.mjs
 import dotenv from 'dotenv'
-import { testConnection } from './test_proxy.js'
+import { testConnection } from './proxy-check.js'
 
 // Load environment variables
 dotenv.config()
